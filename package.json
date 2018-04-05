@@ -1,0 +1,27 @@
+{
+  "name": "attack-defence-platform",
+  "version": "1.0.0",
+  "description": "attack defence",
+  "main": "index.html",
+  "scripts": {
+    "gulp": "gulp default && gulp extend"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-strip-debug": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.nodevops.cn:frontend-team/attack-defence-platform.git"
+  },
+  "author": "alenqi",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}

@@ -1,0 +1,181 @@
+.index-bg {
+  z-index: 1;
+  position: relative;
+  height: 1027px;
+  width: 100%;
+  background: url('../images/index-bg.png') no-repeat left top;
+  background-size: cover;
+}
+
+.index-bottom {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  height: 52px;
+  line-height: 52px;
+  opacity: 0.94;
+  background-color: #2b2c2e;
+  color: #d7a437;
+}
+
+.index-bottom img {
+  margin-right: 20px;
+}
+
+.index-decorate-left {
+  position: absolute;
+  bottom: 52px;
+}
+
+.index-decorate-right {
+  position: absolute;
+  bottom: 52px;
+  right: 0;
+}
+
+.index-decorate-left-triangle {
+  position: absolute;
+  bottom: 120px;
+  left: 55px;
+}
+
+.index-decorate-right-triangle {
+  position: absolute;
+  bottom: 120px;
+  right: 60px;
+}
+
+.index-decorate-dynamic-triangle {
+  right: 83px;
+  top: 11px;
+  position: absolute;
+  animation: flag-bounce 1.5s ease-in-out infinite forwards;
+}
+
+@keyframes flag-bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.index-more {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  right: 300px;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  background: url('../images/index-decorate-more.png') no-repeat left top;
+}
+
+.index-decorate-text {
+  position: absolute;
+  top: -130px;
+  right: -84px;
+  z-index: 2;
+}
+
+.wave {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 75px;
+  right: -220px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 28px;
+  transform: perspective(100px) rotateX(75deg);
+}
+
+.wave .circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+/* 波纹效果 */
+
+.wave.ripple .circle {
+  width: calc(100% - 6px);
+  /* 减去边框的大小 */
+  height: calc(100% - 6px);
+  /* 减去边框的大小 */
+  border: 3px solid #fff;
+}
+
+.wave.ripple .circle:first-child {
+  animation: circle-opacity 2s infinite;
+}
+
+.wave.ripple .circle:nth-child(2) {
+  animation: circle-opacity 2s infinite;
+  animation-delay: 0.3s;
+}
+
+.wave.ripple .circle:nth-child(3) {
+  animation: circle-opacity 2s infinite;
+  animation-delay: 0.6s;
+}
+
+.wave.ripple.danger {
+  color: #ffffff;
+}
+
+.wave.ripple.danger .circle {
+  border-color: #ffffff;
+}
+
+.wave.ripple.warning {
+  color: orange;
+}
+
+.wave.ripple.warning .circle {
+  border-color: orange;
+}
+
+/* 波动效果 */
+
+.wave.solid .circle {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.wave.solid .circle:first-child {
+  animation: circle-opacity 2s infinite;
+}
+
+.wave.solid.danger {
+  color: #ffffff;
+}
+
+.wave.solid.danger .circle {
+  background: #ffffff;
+}
+
+.wave.solid.warning {
+  color: orange;
+}
+
+.wave.solid.warning .circle {
+  background: orange;
+}
+
+@keyframes circle-opacity {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}

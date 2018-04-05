@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/normalize.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/master.css" />
+<!-- start css -->
+<link rel="stylesheet" href="../styles/index.css" />
+
+<!-- end css -->
+</head>
+
+<body>
+  <!-- common header -->
+  <header class="master-header">
+    <div class="master-logo"></div>
+    <section>
+      <div class="master-nav">
+        <a href="#" id="nav1"></a>
+        <a href="#" id="nav2"></a>
+        <a href="#" id="nav3"></a>
+        <a href="#" id="nav4"></a>
+      </div>
+      <div class="master-contact"></div>
+    </section>
+  </header>
+
+<!-- start content -->
+<main>
+  <div class="index-bg">
+    <img class="index-decorate-left" src="../images/index-decorate-left.png" alt="">
+    <img class="index-decorate-left-triangle" src="../images/index-decorate-triangle.png" alt="">
+    <img class="index-decorate-right" src="../images/index-decorate-right.jpg" alt="">
+    <img class="index-decorate-right-triangle" src="../images/index-decorate-triangle.png" alt="">
+    <div class="index-more">
+      <img class="index-decorate-text" src="../images/index-decorate-text.png" alt="">
+      <img class="index-decorate-dynamic-triangle" src="../images/index-decorate-big-triangle.png" alt="">
+      <div class="wave ripple danger">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="content">
+          <i class="fa fa-bell"></i>
+        </div>
+      </div>
+    </div>
+    <div class="index-bottom">
+      <img width="115" height="28" src="../images/index-bottom-logo.png" alt="">
+      <img src="../images/index-logo.png" alt="">
+      <span>2018 ©Copyright bu tangtwon.com 版权所有 沪ICP备16016494号-1</span>
+    </div>
+  </div>
+</main>
+
+<!-- end content -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- start javascript -->
+
+
+<!-- end javascript -->
+  <script type="text/javascript">
+    var page = window.location.href
+    if (page.indexOf('index') != -1) {
+      $('#nav1').css('background-position-x', '0')
+    } else if (page.indexOf('source') != -1) {
+      $('#nav2').css('background-position-x', '0')
+    } else if (page.indexOf('about') != -1) {
+      $('#nav3').css('background-position-x', '0')
+    } else if (page.indexOf('service') != -1) {
+      $('#nav4').css('background-position-x', '0')
+    }
+  </script>
+</body>
+
+</html>

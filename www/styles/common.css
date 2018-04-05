@@ -1,0 +1,76 @@
+.footer {
+  height: 601px;
+  background-color: #333333;
+  padding-top: 97px;
+  color: #ccc;
+}
+
+.footer ul li {
+  float: left;
+  margin-right: 60px;
+}
+
+.footer ul li:nth-of-type(1) {
+  width: 350px;
+}
+
+.footer ul li:nth-of-type(2) {
+  width: 240px;
+}
+
+.footer ul li:nth-of-type(3) {
+  width: 204px;
+}
+
+.footer ul li:nth-of-type(4) {
+  width: 213px;
+  margin-right: 0;
+}
+
+.copyright {
+  position: relative;
+  height: 93px;
+  background: #0a1a3f;
+  padding-top: 33px;
+  color: #d7a437;
+}
+
+.copyright-content {
+  text-align: center;
+}
+
+.copyright-nav {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.copyright-nav a {
+  padding: 0 20px;
+  color: #d7a437;
+  border-right: 1px solid #d7a437;
+}
+
+.copyright-nav a:nth-last-child(1) {
+  border: none;
+}
+
+.copyright-bottom {
+  margin-top: 5px;
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+
+.copyright-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  margin: auto;
+  width: 86px;
+  height: 86px;
+  border: solid 2px #fbce16;
+  background: url('../images/copyright-logo.png') no-repeat left top;
+}
