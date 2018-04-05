@@ -144,7 +144,7 @@
     var page = window.location.href
     if (page.indexOf('index') != -1) {
       $('#nav1').css('background-position-x', '0')
-    } else if (page.indexOf('source') != -1) {
+    } else if ((page.indexOf('source') != -1) || (page.indexOf('details') != -1)) {
       $('#nav2').css('background-position-x', '0')
     } else if (page.indexOf('about') != -1) {
       $('#nav3').css('background-position-x', '0')

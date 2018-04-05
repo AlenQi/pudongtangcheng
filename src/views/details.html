@@ -1,0 +1,56 @@
+<!-- @@master  = master.html -->
+
+<!-- @@block = css -->
+<link rel="stylesheet" href="../styles/details.css" />
+<!-- @@close -->
+
+<!-- @@block = content -->
+<main>
+  <div class="details-content">
+    <div id="myCarousel" class="carousel slide">
+      <!-- 轮播（Carousel）指标 -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- 轮播（Carousel）项目 -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="../images/details-banner.png" alt="First slide">
+        </div>
+        <div class="item">
+          <img src="../images/details-banner.png" alt="Second slide">
+        </div>
+        <div class="item">
+          <img src="../images/details-banner.png" alt="Third slide">
+        </div>
+      </div>
+      <!-- 轮播（Carousel）导航 -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+    <div class="details-layout layout">
+      <div class="details-search">
+        <div class="details-name">
+          <span class="details-id">ID:2328</span>
+          <p class="details-title">天山华庭三室二厅公寓</p>
+          <p class="details-price">
+            ¥12,900<span> /月</span>
+          </p>
+          <p class="details-line"></p>
+          <p><span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- @@include = footer.html -->
+  <!-- @@include = copyright.html -->
+</main>
+<!-- @@close -->

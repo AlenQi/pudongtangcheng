@@ -11,6 +11,7 @@ body {
 
 .master-header {
   width: 100%;
+  min-width: 1200px;
   height: 200px;
   position: absolute;
   z-index: 999;
@@ -80,9 +81,10 @@ body {
 }
 
 .master-contact {
-  width: 321px;
+  width: 290px;
   height: 63px;
   background: url('../images/master-contact.png') no-repeat right top;
   float: right;
   margin-top: 30px;
+  margin-left: -210px;
 }

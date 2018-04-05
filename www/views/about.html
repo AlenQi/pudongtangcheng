@@ -38,8 +38,8 @@
     <div class="layout about-content">
       <!-- Tab panes -->
       <div class="tab-content">
-        <img src="../images/about-logo.png" alt="">
         <div role="tabpanel" class="tab-pane active" id="home">
+          <img src="../images/about-logo.png" alt="">
           <p>
             "唐城城市青年公寓的建设将促进住房市场的健康发展，优化住房市场结构，提高租赁性住房比重；有利于推进区域配套设施的建设，升级青年社区服务，有利于优化青年人才住房市场结构，推进住房保障体系建设。唐城城市青年公寓建设将有利于升级社区配 套服务，优化公共意向，满足青年客群对住房的需求，有利于青年文化的交流和文化的碰撞。同时，唐城城市青年公寓具有升级的潜在条件，通过优化公共意向，促进社区交流，形成开放、共享的第三生活空间。
           </p>
@@ -48,9 +48,15 @@
           </p>
         </div>
         <div role="tabpanel" class="tab-pane" id="profile">
-          <p>
-            唐城城市青年公寓的建设响应了国家对于租赁住房建设的支持政策， 促进了住房机制改革的发展，有助于住房租赁市场的发展，提高唐城城市青年公寓住房租赁企业规模化、集约化、专业化水平，是构建以“健康社交”为核心的新型服务社区，有助于升级社区服务， 并探索商业化运营模式，优化公共意向，形成社区共享的第三生活空间，为区域张江科技园和唐镇社区青年提供一个多元化、开放式的公共空间，形成健康的社交闭环，满足青年人才的实际居住体验需求。"
-          </p>
+          <div>
+            <ul class="nav nav-tabs surround-nav" role="tablist">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="surround-content"></div>
+          </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="messages">
           <p>
@@ -115,7 +121,7 @@
     var page = window.location.href
     if (page.indexOf('index') != -1) {
       $('#nav1').css('background-position-x', '0')
-    } else if (page.indexOf('source') != -1) {
+    } else if ((page.indexOf('source') != -1) || (page.indexOf('details') != -1)) {
       $('#nav2').css('background-position-x', '0')
     } else if (page.indexOf('about') != -1) {
       $('#nav3').css('background-position-x', '0')
