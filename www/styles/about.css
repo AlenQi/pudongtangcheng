@@ -1,7 +1,7 @@
 .about-bg {
   width: 100%;
   height: 818px;
-  background: url('../images/about-bg.png') no-repeat left top;
+  background: url('../images/about-home-bg.png') no-repeat left top;
   background-size: cover;
   padding-top: 250px;
 }
@@ -21,9 +21,9 @@
 
 .tab-content {
   height: 100%;
-  width: 896px;
+  width: 905px;
   float: left;
-  padding: 5px;
+  padding: 4px;
 }
 
 .tab-pane:nth-of-type(1) {
@@ -84,14 +84,72 @@
   border: none;
 }
 
-.surround-nav li {
-  width: 220px;
-  height: 98px;
-  background: red;
+.surround-nav li a {
+  width: 215px;
+  height: 95px;
+  padding: 0 20px;
+  margin-bottom: 0;
+
 }
 
-.surround-content {
+.tab-pane .surround-nav .nav-1 {
+  cursor: pointer;
+  background: url('../images/icon/transportation.svg') no-repeat left top;
+  background-size: 390px 110px;
+  background-position: 15px -10px;
+}
+
+.tab-pane .surround-nav .nav-2 {
+  cursor: pointer;
+  background: url('../images/icon/business.svg') no-repeat left top;
+  background-size: 390px 110px;
+  background-position: 15px -10px;
+}
+
+.tab-pane .surround-nav .nav-3 {
+  cursor: pointer;
+  background: url('../images/icon/education.svg') no-repeat left top;
+  background-size: 390px 110px;
+  background-position: 15px -10px;
+}
+
+.tab-pane .surround-nav .nav-4 {
+  cursor: pointer;
+  background: url('../images/icon/medical.svg') no-repeat left top;
+  background-size: 390px 110px;
+  background-position: 15px -10px;
+}
+
+.tab-content .surround-content {
+  margin: 0;
   height: 389px;
-  background: url('../images/surround-map.png') no-repeat left top;
   background-size: cover;
+}
+
+#transportation {
+  background: url('../images/surround-map.png') no-repeat left top;
+}
+
+.surround-nav img {
+  float: left;
+  position: relative;
+  top: 25px;
+}
+
+#surround-content {
+  width: 100%;
+}
+
+.surround-nav > .nav-1.active,
+.surround-nav > .nav-2.active,
+.surround-nav > .nav-3.active,
+.surround-nav > .nav-4.active {
+  background-position-x: -180px;
+}
+
+.surround-nav > .nav-1:hover,
+.surround-nav > .nav-2:hover,
+.surround-nav > .nav-3:hover,
+.surround-nav > .nav-4:hover {
+  background-position-x: -180px;
 }

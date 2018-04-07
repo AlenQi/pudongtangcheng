@@ -6,7 +6,7 @@
 
 <!-- @@block = content -->
 <main>
-  <div class="about-bg">
+  <div id="about-bg" class="about-bg">
     <div class="layout about-content">
       <!-- Tab panes -->
       <div class="tab-content">
@@ -21,13 +21,23 @@
         </div>
         <div role="tabpanel" class="tab-pane" id="profile">
           <div>
+            <!-- Nav tabs -->
             <ul class="nav nav-tabs surround-nav" role="tablist">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li role="presentation" class="active nav-1"><a href="#transportation" aria-controls="transportation" role="tab" data-toggle="tab"></a></li>
+              <img src="../images/surround-line.png" alt="">
+              <li role="presentation" class="nav-2"><a href="#business" aria-controls="business" role="tab" data-toggle="tab"></a></li>
+              <img src="../images/surround-line.png" alt="">
+              <li role="presentation" class="nav-3"><a href="#education" aria-controls="education" role="tab" data-toggle="tab"></a></li>
+              <img src="../images/surround-line.png" alt="">
+              <li role="presentation" class="nav-4"><a href="#medical" aria-controls="medical" role="tab" data-toggle="tab"></a></li>
             </ul>
-            <div class="surround-content"></div>
+            <!-- Tab panes -->
+            <div id="surround-content" class="tab-content">
+              <div role="tabpanel" class="tab-pane surround-content active" id="transportation"></div>
+              <div role="tabpanel" class="tab-pane surround-content" id="business">123</div>
+              <div role="tabpanel" class="tab-pane surround-content" id="education">456</div>
+              <div role="tabpanel" class="tab-pane surround-content" id="medical">789</div>
+            </div>
           </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="messages">
@@ -38,13 +48,26 @@
       </div>
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active nav-1"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"></a></li>
-        <li role="presentation" class="nav-2"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"></a></li>
-        <li role="presentation" class="nav-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"></a></li>
+        <li role="presentation" id="home" class="active nav-1"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"></a></li>
+        <li id="profile" role="presentation" class="nav-2"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"></a></li>
+        <li id="messages" role="presentation" class="nav-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"></a></li>
       </ul>
     </div>
   </div>
   <!-- @@include = footer.html -->
   <!-- @@include = copyright.html -->
 </main>
+<!-- @@close -->
+
+<!-- @@block = javascript -->
+<script type="text/javascript">
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  var name = e.target.href
+  if (name.indexOf('home') != -1) {
+    $('#about-bg').css('background', 'url(../images/about-bg.png)')
+  } else if (name.indexOf('profile') != -1) {
+    $('#about-bg').css('background', 'url(../images/about-surround-bg.png)')
+  }
+})
+</script>
 <!-- @@close -->

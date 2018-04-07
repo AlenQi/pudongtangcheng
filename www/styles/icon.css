@@ -11,6 +11,11 @@
   background-position-y: 2px;
 }
 
+.icon-local-grey {
+  background: url('../images/icon/icon-local-grey.svg') no-repeat left bottom;
+  background-position-y: 2px;
+}
+
 .icon-local-yellow {
   background: url('../images/icon/icon-local-yellow.svg') no-repeat left bottom;
   background-position-y: 2px;

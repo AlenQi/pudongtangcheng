@@ -1,56 +1,25 @@
-<!-- @@master  = master.html-->
+<!-- @@master  = master.html -->
 
 <!-- @@block = css -->
 <link rel="stylesheet" href="../styles/login.css" />
 <!-- @@close -->
 
-<!-- @@block  =  content-->
-<main class="text-center">
-  <h1>
-    云盾网络空间安全攻防平台
-  </h1>
-  <form class="form-login" id="loginForm">
-    <em class="wrap-logo"></em>
-    <i class="logo-header"></i>
-    <div class="form-group username">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <!-- <span class="glyphicon glyphicon-user"></span> -->
-          <i class="i-user"></i>
-        </div>
-        <label for="username" class="sr-only">请输入用户名</label>
-        <input type="email" class="form-control" id="username" name="username" placeholder="请输入用户名">
-      </div>
-    </div>
-    <div class="form-group password">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <!-- <span class="glyphicon glyphicon-lock"></span> -->
-          <i class="i-lock"></i>
-        </div>
-        <label for="password" class="sr-only">请输入密码</label>
-        <input type="email" class="form-control" id="password" name="password" placeholder="请输入密码">
-      </div>
-    </div>
-    <div class="wrap clearfix">
-      <button type="submit" class="btn btn-primary login">登录</button>
-      <button type="submit" class="btn btn-default register">注册</button>
-    </div>
-  </form>
-</main>
-<!-- @@close-->
+<!-- @@block = content -->
 
-<!-- @@block = footer -->
-<footer>
-  <div class="container text-center">
-    上海云盾信息技术有限公司版权所有
-    <p class="address">
-      Copyright YUNDUN,All Rights Reserved
-    </p>
+<main>
+  <div class="login-bg">
+    <div class="layout login-content">
+      <p class="login-title">账号登录</p>
+      <input placeholder="请输入手机号码" class="login-account" type="text" name="" value=""/>
+      <input placeholder="请输入6 - 16位密码" class="login-password" type="text" name="" value=""/>
+      <input class="login-checkbox" type="checkbox" name="vehicle" value="Car"/>一周内免登录
+      <a class="login-forget">忘记密码？</a>
+      <button class="login-btn" type="button" name="button">登录</button>
+      <p class="login-line"></p>
+      <p>新用户？<span class="login-register">立即注册</span></p>
+    </div>
   </div>
-</footer>
-<!-- @@close -->
-
-<!-- @@block = script -->
-<script src="../scripts/login.js"></script>
+  <!-- @@include = footer.html -->
+  <!-- @@include = copyright.html -->
+</main>
 <!-- @@close -->

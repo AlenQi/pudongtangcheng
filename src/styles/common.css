@@ -139,3 +139,11 @@
   border: solid 2px #fbce16;
   background: url('../images/copyright-logo.png') no-repeat left top;
 }
+
+.clearfix:after {
+  /* 必须设置一个空的congtent,否则不起作用  */
+  content: '';
+  /* 转换成块元素  */
+  display: block;
+  clear: both;
+}
