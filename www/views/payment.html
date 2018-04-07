@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/normalize.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/icon.css" />
+  <link rel="stylesheet" href="../styles/master.css" />
+<!-- start css -->
+<link rel="stylesheet" href="../styles/payment.css" />
+
+<!-- end css -->
+</head>
+
+<body>
+  <!-- common header -->
+  <header class="master-header">
+    <div class="master-logo"></div>
+    <section>
+      <div class="master-nav">
+        <a href="#" id="nav1"></a>
+        <a href="#" id="nav2"></a>
+        <a href="#" id="nav3"></a>
+        <a href="#" id="nav4"></a>
+      </div>
+      <div class="master-contact"></div>
+    </section>
+  </header>
+
+<!-- start content -->
+<main>
+  <div class="payment-bg">
+    <div class="layout payment-content">
+      <div class="payment-order-info">
+        <p class="payment-title">订单信息</p>
+        <div class="payment-process"></div>
+        <p class="payment-line"></p>
+        <p class="payment-detaials">
+          <span>订单编号</span>
+          <span>200800175060848</span>
+          <span>支付状态</span>
+          <span>待支付</span>
+          <span>创建时间</span>
+          <span>2018-04-01 9:11:49</span>
+          <span>支付时间</span>
+          <span>2018-04-01 10:11:49</span>
+        </p>
+        <p class="payment-price">
+          <span>订单金额</span>
+          <span>¥17,900</span>
+        </p>
+      </div>
+      <div class="payment-order-way">
+        <p class="payment-title">支付方式</p>
+        <ul class="payment-way-button">
+          <li>支付宝</li>
+          <li>个人网银</li>
+          <li>企业网银</li>
+          <li>线下汇款充值</li>
+        </ul>
+        <p class="payment-line"></p>
+        <div class="payment-way-content">
+          <p>
+            <input name="Fruit" type="radio" value="" /><span class="zhifubao"></span>
+          </p>
+          <p>
+            <input name="Fruit" type="radio" value="" /><span class="zhifubao"></span>
+          </p>
+        </div>
+        <div class="payment-buttom">
+          <button type="button" name="button">取消</button>
+          <button type="button" name="button">确认支付</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- start copyright.html-->
+<div class="copyright">
+  <div class="layout copyright-content">
+    <div class="copyright-logo"></div>
+    
+    <p class="copyright-nav">
+      <a href="#">首页</a>
+      <a href="#">唐城房源</a>
+      <a href="#">关于我们</a>
+      <a href="#">个人中心</a>
+    </p>
+    <p class="copyright-bottom">
+      2017 © inboyu.com 版权所有 粤ICP备16016494号-1
+    </p>
+  </div>
+</div>
+
+<!-- end copyright.html-->
+</main>
+
+<!-- end content -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- start javascript -->
+
+
+<!-- end javascript -->
+  <script type="text/javascript">
+    var page = window.location.href
+    if (page.indexOf('index') != -1) {
+      $('#nav1').css('background-position-x', '0')
+    } else if ((page.indexOf('source') != -1) || (page.indexOf('details') != -1)) {
+      $('#nav2').css('background-position-x', '0')
+    } else if (page.indexOf('about') != -1) {
+      $('#nav3').css('background-position-x', '0')
+    } else if (page.indexOf('service') != -1) {
+      $('#nav4').css('background-position-x', '0')
+    }
+  </script>
+</body>
+
+</html>
