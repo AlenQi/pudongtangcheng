@@ -3,8 +3,12 @@
   position: relative;
   height: 1027px;
   width: 100%;
-  background: url('../images/index-bg.png') no-repeat left top;
-  background-size: cover;
+  /* background: url('../images/index-bg.png') no-repeat left top;
+  background-size: cover; */
+}
+
+.index-carousel .carousel-inner img {
+  height: 1027px !important;
 }
 
 .index-bottom {
