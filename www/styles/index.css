@@ -1,24 +1,25 @@
 .index-bg {
   z-index: 1;
   position: relative;
-  height: 1027px;
+  height: auto;
   width: 100%;
   /* background: url('../images/index-bg.png') no-repeat left top;
   background-size: cover; */
 }
 
 .index-carousel .carousel-inner img {
-  height: 1027px !important;
+
 }
 
 .index-bottom {
+  z-index: 99;
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 0;
+  bottom: 0px;
   height: 52px;
   line-height: 52px;
-  opacity: 0.94;
+  opacity: 0.86;
   background-color: #2b2c2e;
   color: #d7a437;
 }
@@ -30,24 +31,28 @@
 .index-decorate-left {
   position: absolute;
   bottom: 52px;
+  z-index: 9999;
 }
 
 .index-decorate-right {
   position: absolute;
   bottom: 52px;
   right: 0;
+  z-index: 9999;
 }
 
 .index-decorate-left-triangle {
   position: absolute;
   bottom: 120px;
   left: 55px;
+  z-index: 9999;
 }
 
 .index-decorate-right-triangle {
   position: absolute;
   bottom: 120px;
   right: 60px;
+  z-index: 9999;
 }
 
 .index-decorate-dynamic-triangle {
@@ -56,6 +61,7 @@
   position: absolute;
   -webkit-animation: flag-bounce 1.5s ease-in-out infinite forwards;
           animation: flag-bounce 1.5s ease-in-out infinite forwards;
+          z-index: 9999;
 }
 
 @-webkit-keyframes flag-bounce {

@@ -89,7 +89,6 @@
   height: 95px;
   padding: 0 20px;
   margin-bottom: 0;
-
 }
 
 .tab-pane .surround-nav .nav-1 {
@@ -127,7 +126,21 @@
 }
 
 #transportation {
-  background: url('../images/surround-map.png') no-repeat left top;
+  background: url('../images/surround-map1.jpg') no-repeat left top;
+  background-size: 896px 398px;
+}
+#business {
+  background: url('../images/surround-map2.jpg') no-repeat left top;
+  background-size: 896px 398px;
+}
+#education {
+  background: url('../images/surround-map3.jpg') no-repeat left top;
+  background-size: 896px 398px;
+}
+
+#medical {
+  background: url('../images/surround-map4.jpg') no-repeat left top;
+  background-size: 896px 398px;
 }
 
 .surround-nav img {
@@ -152,4 +165,73 @@
 .surround-nav > .nav-3:hover,
 .surround-nav > .nav-4:hover {
   background-position-x: -180px;
+}
+
+#messages {
+  height: inherit;
+}
+
+.about-contact-pan {
+  padding: 52px 72px 102px 72px;
+}
+
+.about-contact-bg {
+  position: relative;
+  height: 340px;
+  background: url(../images/about-contact-bg.svg) no-repeat left top;
+  background-size: contain;
+}
+
+.about-contact-bg img {
+  position: absolute;
+  top: 50px;
+}
+
+.about-contact-bg span {
+  position: absolute;
+}
+
+.about-contact-bg span:nth-of-type(1) {
+  top: 214px;
+  left: 40px;
+}
+
+.about-contact-bg span:nth-of-type(2) {
+  top: 235px;
+  left: 40px;
+}
+
+.about-contact-bg span:nth-of-type(3) {
+  top: 259px;
+  left: 40px;
+}
+
+.about-contact-bg span:nth-of-type(4) {
+  top: 279px;
+  left: 40px;
+}
+
+.about-contact-bg span:nth-of-type(5) {
+  top: 301px;
+  left: 40px;
+}
+
+.about-contact-bg span:nth-of-type(6) {
+  top: 83px;
+  right: 45px;
+}
+
+.about-contact-bg span:nth-of-type(7) {
+  right: 45px;
+  top: 154px;
+}
+
+.about-contact-bg span:nth-of-type(8) {
+  right: 45px;
+  top: 226px;
+}
+
+.about-contact-bg span:nth-of-type(9) {
+  right: 45px;
+  top: 301px;
 }

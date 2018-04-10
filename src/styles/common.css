@@ -69,7 +69,8 @@
   width: 100px;
   height: 30px;
   background-color: #182d52;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 
 .footer-source:nth-of-type(1) {

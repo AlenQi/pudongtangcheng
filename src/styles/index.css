@@ -1,24 +1,25 @@
 .index-bg {
   z-index: 1;
   position: relative;
-  height: 1027px;
+  height: auto;
   width: 100%;
   /* background: url('../images/index-bg.png') no-repeat left top;
   background-size: cover; */
 }
 
 .index-carousel .carousel-inner img {
-  height: 1027px !important;
+
 }
 
 .index-bottom {
+  z-index: 99;
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 0;
+  bottom: 0px;
   height: 52px;
   line-height: 52px;
-  opacity: 0.94;
+  opacity: 0.86;
   background-color: #2b2c2e;
   color: #d7a437;
 }
@@ -30,31 +31,49 @@
 .index-decorate-left {
   position: absolute;
   bottom: 52px;
+  z-index: 9999;
 }
 
 .index-decorate-right {
   position: absolute;
   bottom: 52px;
   right: 0;
+  z-index: 9999;
 }
 
 .index-decorate-left-triangle {
   position: absolute;
   bottom: 120px;
   left: 55px;
+  z-index: 9999;
 }
 
 .index-decorate-right-triangle {
   position: absolute;
   bottom: 120px;
   right: 60px;
+  z-index: 9999;
 }
 
 .index-decorate-dynamic-triangle {
   right: 83px;
   top: 11px;
   position: absolute;
-  animation: flag-bounce 1.5s ease-in-out infinite forwards;
+  -webkit-animation: flag-bounce 1.5s ease-in-out infinite forwards;
+          animation: flag-bounce 1.5s ease-in-out infinite forwards;
+          z-index: 9999;
+}
+
+@-webkit-keyframes flag-bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes flag-bounce {
@@ -96,37 +115,46 @@
   text-align: center;
   line-height: 100px;
   font-size: 28px;
-  transform: perspective(100px) rotateX(75deg);
+  -webkit-transform: perspective(100px) rotateX(75deg);
+          transform: perspective(100px) rotateX(75deg);
 }
 
 .wave .circle {
   position: absolute;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   opacity: 0;
 }
 
 /* 波纹效果 */
 
 .wave.ripple .circle {
+  width: -webkit-calc(100% - 6px);
   width: calc(100% - 6px);
   /* 减去边框的大小 */
+  height: -webkit-calc(100% - 6px);
   height: calc(100% - 6px);
   /* 减去边框的大小 */
   border: 3px solid #fff;
 }
 
 .wave.ripple .circle:first-child {
-  animation: circle-opacity 2s infinite;
+  -webkit-animation: circle-opacity 2s infinite;
+          animation: circle-opacity 2s infinite;
 }
 
 .wave.ripple .circle:nth-child(2) {
-  animation: circle-opacity 2s infinite;
-  animation-delay: 0.3s;
+  -webkit-animation: circle-opacity 2s infinite;
+          animation: circle-opacity 2s infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .wave.ripple .circle:nth-child(3) {
-  animation: circle-opacity 2s infinite;
-  animation-delay: 0.6s;
+  -webkit-animation: circle-opacity 2s infinite;
+          animation: circle-opacity 2s infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .wave.ripple.danger {
@@ -154,7 +182,8 @@
 }
 
 .wave.solid .circle:first-child {
-  animation: circle-opacity 2s infinite;
+  -webkit-animation: circle-opacity 2s infinite;
+          animation: circle-opacity 2s infinite;
 }
 
 .wave.solid.danger {
@@ -173,13 +202,28 @@
   background: orange;
 }
 
-@keyframes circle-opacity {
+@-webkit-keyframes circle-opacity {
   from {
     opacity: 1;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
     opacity: 0;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes circle-opacity {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }

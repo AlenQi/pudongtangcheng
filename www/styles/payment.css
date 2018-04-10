@@ -89,16 +89,20 @@
   margin-top: 50px;
 }
 
-.payment-way-button {
-  float: right;
+.payment-way-nav {
   height: 36px;
   line-height: 36px;
 }
 
-.payment-way-button li {
+.payment-way-nav li {
+  float: right;
+}
+
+.payment-way-nav li a {
+  margin-top: -10px;
   width: 90px;
   height: 36px;
-  float: left;
+  line-height: 36px;
   margin-left: 20px;
   font-size: 14px;
   color: #333;
@@ -108,8 +112,8 @@
           border-radius: 2px;
 }
 
-.payment-way-button li:nth-of-type(1),
-.payment-way-button li:hover {
+.payment-way-nav .active a,
+.payment-way-nav li a:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#edad10), to(#ffc65f)),
     -webkit-gradient(linear, left top, left bottom, from(#2d90e6), to(#2d90e6));
   background-image: -webkit-linear-gradient(bottom, #edad10 0%, #ffc65f 100%),
@@ -161,4 +165,8 @@
   -webkit-border-radius: 2px;
           border-radius: 2px;
   border: solid 1px #fbce16;
+}
+
+.nav>li>a {
+  padding: 0;
 }

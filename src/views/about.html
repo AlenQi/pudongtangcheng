@@ -34,16 +34,27 @@
             <!-- Tab panes -->
             <div id="surround-content" class="tab-content">
               <div role="tabpanel" class="tab-pane surround-content active" id="transportation"></div>
-              <div role="tabpanel" class="tab-pane surround-content" id="business">123</div>
-              <div role="tabpanel" class="tab-pane surround-content" id="education">456</div>
-              <div role="tabpanel" class="tab-pane surround-content" id="medical">789</div>
+              <div role="tabpanel" class="tab-pane surround-content" id="business"></div>
+              <div role="tabpanel" class="tab-pane surround-content" id="education"></div>
+              <div role="tabpanel" class="tab-pane surround-content" id="medical"></div>
             </div>
           </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="messages">
-          <p>
-            "唐城城市青年公寓的建设将促进住房市场的健康发展，优化住房市场结构，提高租赁性住房比重；有利于推进区域配套设施的建设，升级青年社区服务，有利于优化青年人才住房市场结构，推进住房保障体系建设。唐城城市青年公寓建设将有利于升级社区配 套服务，优化公共意向，满足青年客群对住房的需求，有利于青年文化的交流和文化的碰撞。同时，唐城城市青年公寓具有升级的潜在条件，通过优化公共意向，促进社区交流，形成开放、共享的第三生活空间。
-          </p>
+          <div class="about-contact-pan">
+            <div class="about-contact-bg">
+              <img src="../images/about-linker-map.png" alt="">
+              <span>上海市浦东新区唐陆路2685号第一幢</span>
+              <span>210042</span>
+              <span>021-58966855</span>
+              <span>025-84676416</span>
+              <span>4007-999-999</span>
+              <span>025-86853969转12345</span>
+              <span>025-86853969转12345</span>
+              <span>025-86853969转12345</span>
+              <span>025-86853969转12345</span>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Nav tabs -->
@@ -64,8 +75,10 @@
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   var name = e.target.href
   if (name.indexOf('home') != -1) {
-    $('#about-bg').css('background', 'url(../images/about-bg.png)')
+    $('#about-bg').css('background', 'url(../images/about-home-bg.png)')
   } else if (name.indexOf('profile') != -1) {
+    $('#about-bg').css('background', 'url(../images/about-surround-bg.png)')
+  } else if (name.indexOf('messages') != -1) {
     $('#about-bg').css('background', 'url(../images/about-surround-bg.png)')
   }
 })

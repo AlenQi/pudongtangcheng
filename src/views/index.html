@@ -6,10 +6,10 @@
 
 <!-- @@block = content -->
 <main>
-  <div class="index-bg">
+  <div class="index-bg" id="indexBg">
     <div id="myCarousel" class="index-carousel carousel slide">
       <!-- 轮播（Carousel）项目 -->
-      <div class="carousel-inner">
+      <div class="carousel-inner" id="carouselInner">
         <div class="item active">
           <img src="../images/index-bg.png" alt="First slide">
         </div>
@@ -51,6 +51,18 @@
 $('#myCarousel').carousel({
   interval: 2000,
   pause: null
+})
+</script>
+<script type="text/javascript">
+$(window).on('load resize', function() {
+  var h =
+    window.innerHeight ||
+    document.body.clientHeight ||
+    document.documentElement.clientHeight
+    console.log('h', h)
+  $('#indexBg').css('height', h)
+  $('#myCarousel').css('height', h)
+  $('#carouselInner').css('height', h)
 })
 </script>
 <!-- @@close -->

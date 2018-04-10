@@ -51,7 +51,8 @@
 
 .source-content-sort .dropdown-toggle {
   width: 275px;
-  border-radius: 30px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
 }
 
 .source-content-sort .dropdown-menu {
@@ -169,7 +170,8 @@
 
 .source-content-item:hover {
   background-color: rgba(255, 255, 255, 0.02);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.18);
 }
 
 .source-content-decorate {
@@ -276,7 +278,8 @@
 .source-search-btn {
   width: 220px;
   height: 55px;
-  border-radius: 40px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
   border: 5px solid #fcc253;
   margin: 30px;
 }
@@ -294,7 +297,8 @@
 .source-new button {
   color: #fff;
   margin-top: 15px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   margin-top: 20px;
   width: 100px;
   height: 30px;
@@ -334,7 +338,8 @@
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .pagination > li > a,
@@ -346,9 +351,11 @@
 
 .pagination a:hover,
 .pagination a:focus {
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #ffffff;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .pagination > li > a,
@@ -364,7 +371,8 @@
 .pagination > li > span:focus {
   color: #f5b834;
   background-color: #ffffff;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .pagination > .active > a,
@@ -373,9 +381,11 @@
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
   cursor: pointer;
   color: #f5b834;
   background-color: #ffffff;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }

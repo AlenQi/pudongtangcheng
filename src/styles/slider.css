@@ -85,7 +85,8 @@
   z-index: 10;
   cursor: pointer;
   background: #f5b834;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 .price-range .tip {
   width: 120px;
