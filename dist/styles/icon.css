@@ -1,0 +1,73 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.icon-local-white {
+  background: url('../images/icon/icon-local-white.svg') no-repeat left bottom;
+  background-position-y: 2px;
+}
+
+.icon-local-grey {
+  background: url('../images/icon/icon-local-grey.svg') no-repeat left bottom;
+  background-position-y: 2px;
+}
+
+.icon-local-yellow {
+  background: url('../images/icon/icon-local-yellow.svg') no-repeat left bottom;
+  background-position-y: 2px;
+}
+
+.icon-big {
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+  background-size: contain;
+}
+
+.icon-refrigerator {
+  background: url('../images/icon/icon-refrigerator.svg') no-repeat left center;
+}
+
+.icon-bed {
+  background: url('../images/icon/icon-bed.svg') no-repeat left center;
+}
+
+.icon-calorifier {
+  background: url('../images/icon/icon-calorifier.svg') no-repeat left center;
+}
+
+.icon-conditioner {
+  background: url('../images/icon/icon-conditioner.svg') no-repeat left center;
+}
+
+.icon-exhaust {
+  background: url('../images/icon/icon-exhaust.svg') no-repeat left center;
+}
+
+.icon-microwave {
+  background: url('../images/icon/icon-microwave.svg') no-repeat left center;
+}
+
+.icon-router {
+  background: url('../images/icon/icon-router.svg') no-repeat left center;
+}
+
+.icon-sofa {
+  background: url('../images/icon/icon-sofa.svg') no-repeat left center;
+}
+
+.icon-television {
+  background: url('../images/icon/icon-television.svg') no-repeat left center;
+}
+
+.icon-wardrobe {
+  background: url('../images/icon/icon-wardrobe.svg') no-repeat left center;
+}
+
+.icon-washer {
+  background: url('../images/icon/icon-washer.svg') no-repeat left center;
+}

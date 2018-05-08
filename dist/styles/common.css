@@ -1,0 +1,150 @@
+.footer {
+  height: 601px;
+  background-color: #333333;
+  padding-top: 97px;
+  color: #ccc;
+}
+
+.footer ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.footer ul li {
+  float: left;
+  margin-right: 60px;
+}
+
+.footer ul li:nth-of-type(1) {
+  width: 350px;
+}
+
+.footer ul li:nth-of-type(2) {
+  width: 240px;
+}
+
+.footer ul li:nth-of-type(3) {
+  width: 225px;
+}
+
+.footer ul li:nth-of-type(4) {
+  width: 200px;
+  margin-right: 0;
+}
+
+.footer-title {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-line {
+  background: #f7bb3b;
+  height: 1px;
+  margin: 35px 0;
+}
+
+.footer-description {
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.footer-section-1 p:nth-of-type(4) {
+  margin: 30px 0;
+}
+
+.footer-section-1 p:nth-of-type(5) a {
+  font-size: 12px;
+  color: #f7bb3b;
+}
+
+.footer-source p:nth-of-type(1) {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-source button {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #182d52;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.footer-source:nth-of-type(1) {
+  background: url('../images/footer-resource-1.png') no-repeat top left;
+  padding-left: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-source:nth-of-type(2) {
+  background: url('../images/footer-resource-2.png') no-repeat top left;
+  padding-left: 100px;
+}
+
+.footer-section-3 .footer-description,
+.footer-section-4 .footer-description {
+  line-height: 25px;
+}
+
+.footer-section-4 {
+  padding-top: 24px;
+}
+
+.copyright {
+  position: relative;
+  height: 93px;
+  background: #0a1a3f;
+  padding-top: 33px;
+  color: #d7a437;
+}
+
+.copyright-content {
+  text-align: center;
+}
+
+.copyright-nav {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.copyright-nav a {
+  padding: 0 20px;
+  color: #d7a437;
+  border-right: 1px solid #d7a437;
+}
+
+.copyright-nav a:nth-last-child(1) {
+  border: none;
+}
+
+.copyright-bottom {
+  margin-top: 5px;
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+
+.copyright-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  margin: auto;
+  width: 86px;
+  height: 86px;
+  border: solid 2px #fbce16;
+  background: url('../images/copyright-logo.png') no-repeat left top;
+}
+
+.clearfix:after {
+  /* 必须设置一个空的congtent,否则不起作用  */
+  content: '';
+  /* 转换成块元素  */
+  display: block;
+  clear: both;
+}

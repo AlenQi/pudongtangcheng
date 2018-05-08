@@ -1,0 +1,148 @@
+body {
+  font-family: "Microsoft Yahei";
+  min-width: 1200px;
+  overflow: scroll;
+}
+
+.layout {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.master-header {
+  width: 100%;
+  min-width: 1200px;
+  height: 200px;
+  position: absolute;
+  z-index: 999;
+  background: url('../images/master-top-line.png') no-repeat;
+}
+
+.master-header div {
+  display: inline-block;
+}
+
+.master-header section {
+  height: 130px;
+  position: relative;
+  top: 5px;
+}
+
+.master-logo,
+.master-nav {
+  float: left;
+}
+
+.master-logo {
+  background: url('../images/master-logo.png') no-repeat right top;
+  background-size: cover;
+  height: 200px;
+  width: 440px;
+  margin-right: -24px;
+  position: relative;
+  z-index: 2;
+}
+
+.master-nav {
+  margin-top: 30px;
+}
+
+.master-nav a {
+  display: inline-block;
+  height: 80px;
+  width: 200px;
+  background-size: contain;
+  margin-left: -30px;
+}
+
+.master-nav a:nth-of-type(1) {
+  background: url('../images/master-nav-index.png') no-repeat left top;
+  background-position-x: -400px;
+}
+
+.master-nav a:nth-of-type(2) {
+  background: url('../images/master-nav-resource.png') no-repeat left top;
+  background-position-x: -400px;
+}
+
+.master-nav a:nth-of-type(3) {
+  background: url('../images/master-nav-about.png') no-repeat left top;
+  background-position-x: -400px;
+}
+
+.master-nav a:nth-of-type(4) {
+  background: url('../images/master-nav-service.png') no-repeat left top;
+  background-position-x: -400px;
+}
+
+.master-nav a:hover {
+  background-position-x: -200px;
+}
+
+.master-contact {
+  width: 290px;
+  height: 63px;
+  background: url('../images/master-contact.png') no-repeat right top;
+  float: right;
+  margin-top: 30px;
+  margin-left: -210px;
+}
+
+.master-loading {
+  background: url('../images/master-doc.png') no-repeat left top;
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  bottom: 75px;
+  right: 95px;
+  text-align: center;
+  background-size: 200px 20px;
+}
+
+.shadow {
+  color: #f5f5f5;
+  letter-spacing: 8px;
+  width: 200px;
+  padding-left: 15px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #f8cc16),
+    color-stop(0.4, #f8cc16),
+    color-stop(0.5, white),
+    color-stop(0.6, #f8cc16),
+    color-stop(1, #f8cc16)
+  );
+  background: -webkit-linear-gradient(
+    left top,
+    right top,
+    color-stop(0, #f8cc16),
+    color-stop(0.4, #f8cc16),
+    color-stop(0.5, white),
+    color-stop(0.6, #f8cc16),
+    color-stop(1, #f8cc16)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: animate 3.5s infinite;
+}
+
+@-webkit-keyframes animate {
+  /* 背景从-100px的水平位置，移动到+100px的水平位置。如果要移动Y轴的，设置第二个数值 */
+  from {
+    background-position: -100px;
+  }
+  to {
+    background-position: 100px;
+  }
+}
+@keyframes animate {
+  from {
+    background-position: -100px;
+  }
+  to {
+    background-position: 100px;
+  }
+}
