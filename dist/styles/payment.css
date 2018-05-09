@@ -14,6 +14,12 @@
   right: 35px;
 }
 
+.payment-circle span {
+  display: inline;
+  width: 50px;
+  height: 50px;
+}
+
 .payment-content {
   padding-top: 252px;
 }
