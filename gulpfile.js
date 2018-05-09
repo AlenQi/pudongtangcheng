@@ -44,7 +44,12 @@ gulp.task('images', function() {
 gulp.task('extend', function() {
   return gulp
     .src(['./src/views/*.html', '!./src/views/layout.html'])
-    .pipe(extender({ annotations: true, verbose: false })) // default options
+    .pipe(
+      extender({
+        annotations: true,
+        verbose: false
+      })
+    ) // default options
     .pipe(
       notify({
         message: 'Generated file: <%= file.relative %> @ <%= options.date %>',
