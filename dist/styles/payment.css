@@ -7,17 +7,74 @@
 .payment-process {
   width: 465px;
   height: 68px;
-  background: url('../images/payment-process.jpg') no-repeat center center;
-  background-size: cover;
   position: absolute;
   top: 15px;
   right: 35px;
 }
 
 .payment-circle span {
-  display: inline;
+  display: inline-block;
   width: 50px;
   height: 50px;
+  position: absolute;
+}
+
+.payment-circle span:nth-of-type(1) {
+  background: url('../images/payment-process-1.png') no-repeat left top;
+  background-size: 150px 50px;
+  background-position-x: -100px;
+}
+
+.payment-circle span:nth-of-type(2) {
+  background: url('../images/payment-process-2.png') no-repeat left top;
+  background-size: 150px 50px;
+  background-position-x: -50px;
+  left: 200px;
+}
+
+.payment-circle span:nth-of-type(3) {
+  background: url('../images/payment-process-3.png') no-repeat left top;
+  background-size: 150px 50px;
+  left: 400px;
+}
+
+.payment-circle p {
+  padding-top: 55px;
+}
+
+.payment-circle p a {
+  display: inline-block;
+}
+
+.payment-circle a:nth-of-type(1) {
+  color: #000;
+}
+
+.payment-circle a:nth-of-type(2) {
+  color: #f5b834;
+  margin: 0 150px;
+}
+
+.payment-circle a:nth-of-type(3) {
+  color: #ddd;
+}
+
+.payment-process-line-active,
+.payment-process-line {
+  position: absolute;
+  height: 2px;
+  width: 150px;
+  top: 25px;
+}
+
+.payment-process-line-active {
+  background: #f5b834;
+  left: 50px;
+}
+
+.payment-process-line {
+  background: #ddd;
+  left: 250px;
 }
 
 .payment-content {
