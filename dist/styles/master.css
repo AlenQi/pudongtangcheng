@@ -16,6 +16,7 @@ body {
   position: absolute;
   z-index: 999;
   background: url('../images/master-top-line.png') no-repeat;
+  background-size: 100% 20px;
 }
 
 .master-header div {
@@ -58,21 +59,25 @@ body {
 .master-nav a:nth-of-type(1) {
   background: url('../images/master-nav-index.png') no-repeat left top;
   background-position-x: -400px;
+  background-size: 600px 80px;
 }
 
 .master-nav a:nth-of-type(2) {
   background: url('../images/master-nav-resource.png') no-repeat left top;
   background-position-x: -400px;
+  background-size: 600px 80px;
 }
 
 .master-nav a:nth-of-type(3) {
   background: url('../images/master-nav-about.png') no-repeat left top;
   background-position-x: -400px;
+  background-size: 600px 80px;
 }
 
 .master-nav a:nth-of-type(4) {
   background: url('../images/master-nav-service.png') no-repeat left top;
   background-position-x: -400px;
+  background-size: 600px 80px;
 }
 
 .master-nav a:hover {
@@ -81,8 +86,9 @@ body {
 
 .master-contact {
   width: 290px;
-  height: 63px;
+  height: 69px;
   background: url('../images/master-contact.png') no-repeat right top;
+  background-size: 290px 69px;
   float: right;
   margin-top: 30px;
   margin-left: -210px;

@@ -52,16 +52,19 @@
 .nav-tabs > .nav-1 {
   background: url('../images/about-nav-1.png') no-repeat left top;
   background-position-x: -574px;
+  background-size: 861px;
 }
 
 .nav-tabs > .nav-2 {
   background: url('../images/about-nav-2.png') no-repeat left top;
   background-position-x: -574px;
+  background-size: 861px;
 }
 
 .nav-tabs > .nav-3 {
   background: url('../images/about-nav-3.png') no-repeat left top;
   background-position-x: -574px;
+  background-size: 861px;
 }
 
 .nav-tabs > .nav-1.active,

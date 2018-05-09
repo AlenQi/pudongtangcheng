@@ -29,12 +29,14 @@
 }
 
 .index-decorate-left {
+  width: 201px;
   position: absolute;
   bottom: 52px;
   z-index: 9999;
 }
 
 .index-decorate-right {
+  width: 179px;
   position: absolute;
   bottom: 52px;
   right: 0;
@@ -42,6 +44,7 @@
 }
 
 .index-decorate-left-triangle {
+  width: 26px;
   position: absolute;
   bottom: 120px;
   left: 55px;
@@ -49,6 +52,7 @@
 }
 
 .index-decorate-right-triangle {
+  width: 26px;
   position: absolute;
   bottom: 120px;
   right: 60px;
@@ -56,6 +60,7 @@
 }
 
 .index-decorate-dynamic-triangle {
+  width: 90px;
   right: 83px;
   top: 11px;
   position: absolute;
@@ -97,6 +102,7 @@
   width: 400px;
   height: 200px;
   background: url('../images/index-decorate-more.png') no-repeat left top;
+  background-size: 400px 200px;
 }
 
 .index-decorate-text {
@@ -104,6 +110,7 @@
   top: -130px;
   right: -84px;
   z-index: 2;
+  width: 220px;
 }
 
 .wave {

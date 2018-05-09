@@ -139,6 +139,7 @@
   height: 86px;
   border: solid 2px #fbce16;
   background: url('../images/copyright-logo.png') no-repeat left top;
+  background-size: 86px 86px;
 }
 
 .clearfix:after {

@@ -180,6 +180,10 @@
   top: 35px;
 }
 
+.source-content-decorate  img {
+  width: 105px;
+}
+
 .source-content-item-title {
   float: left;
   border-right: 1px solid #e5e5e5;
