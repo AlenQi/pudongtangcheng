@@ -31,10 +31,12 @@ gulp.task('styles', function() {
 })
 
 gulp.task('scripts', function() {
-  return (gulp
+  return (
+    gulp
       .src(['./src/scripts/*.js'])
       // .pipe(stripDebug())
-      .pipe(gulp.dest('./www/scripts/')) )
+      .pipe(gulp.dest('./www/scripts/'))
+  )
 })
 
 gulp.task('images', function() {
