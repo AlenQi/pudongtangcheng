@@ -1,3 +1,8 @@
+.carousel-inner,
+.carousel-inner .item img {
+  min-height: 670px;
+}
+
 .details-content {
   height: 1700px;
   width: 100%;
@@ -273,9 +278,12 @@
   z-index: 9;
   left: 0;
   bottom: 0;
+width: 201px;
+
 }
 
 .details-decorate-right {
+  width: 179px;
   position: absolute;
   z-index: 9;
   bottom: 0;
