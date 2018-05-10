@@ -1,6 +1,7 @@
 .carousel-inner,
 .carousel-inner .item img {
   min-height: 670px;
+  max-width: none;
 }
 
 .details-content {
