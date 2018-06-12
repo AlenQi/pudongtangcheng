@@ -1,0 +1,95 @@
+.introduce-bg {
+  width: 100%;
+  height: 1025px;
+  background: url('../images/about-home-bg.png') no-repeat left top;
+  background-size: cover;
+  padding-top: 320px;
+  position: relative;
+}
+
+.introduce-content {
+  width: 1040px;
+  height: 570px;
+}
+
+.introduce-item {
+  height: 570px;
+  width: 260px;
+  float: left;
+  transform: skewX(-15deg);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.introduce-item:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  transform: skewX(15deg);
+  background: url('../images/introduce-time1-bg.jpg') no-repeat center center;
+  background-position: -350px 0px;
+}
+
+.introduce-item:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  transform: skewX(15deg);
+  background: url('../images/introduce-time2-bg.jpg') no-repeat center center;
+  background-position: -200px 0px;
+}
+
+.introduce-item:nth-of-type(3)::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  transform: skewX(15deg);
+  background: url('../images/introduce-time3-bg.jpg') no-repeat center center;
+  background-position: -100px 0px;
+}
+
+.introduce-item:nth-of-type(4)::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  transform: skewX(15deg);
+  background: url('../images/introduce-time4-bg.jpg') no-repeat center center;
+  background-position: -150px 0px;
+}
+
+.introduce-footer, .introduce-hover {
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+  transform: skewX(17deg);
+}
+
+.introduce-hover {
+  left: -45px;
+  display: none;
+}
+
+.index-decorate-right {
+  width: 168px;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  z-index: 9999;
+}
+
+.index-decorate-right-triangle {
+  width: 26px;
+  position: absolute;
+  bottom: 60px;
+  right: 57px;
+  z-index: 9999;
+}

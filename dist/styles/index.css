@@ -3,6 +3,10 @@
   position: relative;
   height: 100% !important;
   width: 100%;
+  background: url('../images/index-bg.png') no-repeat left top;
+  background-size: cover;
+  /* background: url('../images/index-bg.png') no-repeat left top;
+  background-size: cover; */
 }
 
 .index-carousel .carousel-inner div,
@@ -11,20 +15,16 @@
   width: 100%;
 }
 
-/* .index-carousel .carousel-inner .item:nth-of-type(1) {
-  background: url('../images/index-bg.png') no-repeat left top;
-  background-size: cover;
-} */
-
 .index-bottom {
+  font-size: 12px;
   z-index: 99;
   position: absolute;
   width: 100%;
   text-align: center;
   bottom: 0px;
-  height: 52px;
-  line-height: 52px;
-  opacity: 0.86;
+  height: 42px;
+  line-height: 42px;
+  opacity: 0.88;
   background-color: #2b2c2e;
   color: #d7a437;
 }
@@ -34,16 +34,16 @@
 }
 
 .index-decorate-left {
-  width: 201px;
+  width: 190px;
   position: absolute;
-  bottom: 52px;
+  bottom: 42px;
   z-index: 9999;
 }
 
 .index-decorate-right {
-  width: 179px;
+  width: 168px;
   position: absolute;
-  bottom: 52px;
+  bottom: 42px;
   right: 0;
   z-index: 9999;
 }
@@ -51,23 +51,23 @@
 .index-decorate-left-triangle {
   width: 26px;
   position: absolute;
-  bottom: 120px;
-  left: 55px;
+  bottom: 98px;
+  left: 50px;
   z-index: 9999;
 }
 
 .index-decorate-right-triangle {
   width: 26px;
   position: absolute;
-  bottom: 120px;
-  right: 60px;
+  bottom: 98px;
+  right: 57px;
   z-index: 9999;
 }
 
 .index-decorate-dynamic-triangle {
-  width: 90px;
-  right: 83px;
-  top: 11px;
+  width: 72px;
+  right: 65px;
+  top: 16px;
   position: absolute;
   -webkit-animation: flag-bounce 1.5s ease-in-out infinite forwards;
           animation: flag-bounce 1.5s ease-in-out infinite forwards;
@@ -102,30 +102,30 @@
   position: absolute;
   top: 60px;
   bottom: 0;
-  right: 300px;
+  right: 200px;
   margin: auto;
-  width: 400px;
-  height: 200px;
+  width: 339px;
+  height: 162px;
   background: url('../images/index-decorate-more.png') no-repeat left top;
-  background-size: 400px 200px;
+  background-size: 339px 162px;
 }
 
 .index-decorate-text {
   position: absolute;
   top: -130px;
-  right: -84px;
+  right: -74px;
   z-index: 2;
-  width: 220px;
+  width: 177px;
 }
 
 .wave {
   position: relative;
-  width: 100px;
-  height: 100px;
-  top: 75px;
-  right: -220px;
+  width: 140px;
+  height: 140px;
+  top: 30px;
+  right: -166px;
   text-align: center;
-  line-height: 100px;
+  line-height: 140px;
   font-size: 28px;
   -webkit-transform: perspective(100px) rotateX(75deg);
           transform: perspective(100px) rotateX(75deg);
@@ -151,20 +151,20 @@
 }
 
 .wave.ripple .circle:first-child {
-  -webkit-animation: circle-opacity 2s infinite;
-          animation: circle-opacity 2s infinite;
+  -webkit-animation: circle-opacity 3s infinite;
+          animation: circle-opacity 3s infinite;
 }
 
 .wave.ripple .circle:nth-child(2) {
-  -webkit-animation: circle-opacity 2s infinite;
-          animation: circle-opacity 2s infinite;
+  -webkit-animation: circle-opacity 3s infinite;
+          animation: circle-opacity 3s infinite;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
 .wave.ripple .circle:nth-child(3) {
-  -webkit-animation: circle-opacity 2s infinite;
-          animation: circle-opacity 2s infinite;
+  -webkit-animation: circle-opacity 3s infinite;
+          animation: circle-opacity 3s infinite;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
@@ -194,8 +194,8 @@
 }
 
 .wave.solid .circle:first-child {
-  -webkit-animation: circle-opacity 2s infinite;
-          animation: circle-opacity 2s infinite;
+  -webkit-animation: circle-opacity 3s infinite;
+          animation: circle-opacity 3s infinite;
 }
 
 .wave.solid.danger {
@@ -237,5 +237,10 @@
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+@media screen and (max-width: 1600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .master-contact {
+    visibility: hidden;
   }
 }
