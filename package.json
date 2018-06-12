@@ -1,7 +1,7 @@
 {
-  "name": "attack-defence-platform",
+  "name": "pudongtangcheng",
   "version": "1.0.0",
-  "description": "attack defence",
+  "description": "pudongtangcheng",
   "main": "index.html",
   "scripts": {
     "gulp": "gulp default && gulp extend"
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.nodevops.cn:frontend-team/attack-defence-platform.git"
+    "url": "git@github.com:AlenQi/pudongtangcheng.git"
   },
   "author": "alenqi",
   "license": "ISC",
